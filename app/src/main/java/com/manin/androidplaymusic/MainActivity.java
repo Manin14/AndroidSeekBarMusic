@@ -99,8 +99,9 @@ public class MainActivity extends AppCompatActivity {
            // mediaPlayer.setDataSource("https://soundcloud.com/jksonxie/on-my-way-alan-walker");
 
             mediaPlayer =  MediaPlayer.create(getBaseContext(), R.raw.lagunya);
-            mediaPlayer.prepare();
             textTotalDuration.setText(milliSecondToTimer(mediaPlayer.getDuration()));
+            mediaPlayer.prepare();
+
             //textTotalDuration.setText(mediaPlayer.getDuration());
         }
         catch (Exception e){
